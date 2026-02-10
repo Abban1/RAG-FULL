@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PDF RAG Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container"><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF RAG Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span>PDF Chat</span>
+        </div>
+        <div class="header-status">
+          <span class="status-dot"></span>
+          Ready
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat Container -->
+    <div class="chat-wrapper">
+      <div id="chat" class="chat-messages">
+        <div class="welcome-screen">
+          <div class="welcome-icon">📄</div>
+          <h2>Welcome to PDF Chat</h2>
+          <p>Ask anything about your PDF documents</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Input Area -->
+    <div class="input-area">
+      <div class="input-container">
+        <input 
+          id="message" 
+          type="text"
+          placeholder="Ask a question about your PDF..."
+          class="message-input"
+          onkeypress="if(event.key === 'Enter') sendMessage()"
+        />
+        <button class="send-button" onclick="sendMessage()">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+      <p class="input-hint">Press Enter or click Send</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+  <div id="chat"></div>
+
+  <div class="input-box">
+    <input id="message" placeholder="Ask from PDF..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
