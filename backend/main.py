@@ -12,11 +12,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 class ChatRequest(BaseModel):
     message: str
 
+
 class ChatResponse(BaseModel):
     reply: str
+
 
 @app.post("/chat", response_model=ChatResponse)
 def chat(req: ChatRequest):
